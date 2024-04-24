@@ -1,9 +1,12 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-
-<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
-  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
-  <script type="text/javascript">
-    alert("XSS");
-  </script>
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heading -->
+  <text x="10" y="20" font-family="Arial" font-size="16" font-weight="bold">Embedded HTML</text>
+  
+  <!-- Paragraph -->
+  <text x="10" y="50" font-family="Arial" font-size="14">This is a paragraph within an SVG.</text>
+  
+  <!-- List Items -->
+  <text x="10" y="80" font-family="Arial" font-size="14">• List item 1</text>
+  <text x="10" y="100" font-family="Arial" font-size="14">• List item 2</text>
+  <text x="10" y="120" font-family="Arial" font-size="14">• List item 3</text>
 </svg>
