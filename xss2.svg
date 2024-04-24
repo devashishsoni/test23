@@ -1,0 +1,5 @@
+<svg onload="alert('XSS')" xmlns="http://www.w3.org/2000/svg">
+  <a xlink:href="javascript:alert('XSS')">
+    <rect width="100" height="100" style="fill:blue;"/>
+  </a>
+</svg>
