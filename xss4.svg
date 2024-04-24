@@ -1,0 +1,20 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Heading with hyperlink -->
+  <a xlink:href="https://example.com" target="_blank">
+    <text x="10" y="20" font-family="Arial" font-size="16" font-weight="bold" fill="blue" cursor="pointer">Embedded HTML</text>
+  </a>
+  
+  <!-- Paragraph -->
+  <text x="10" y="50" font-family="Arial" font-size="14">This is a paragraph within an SVG.</text>
+  
+  <!-- List Items with hyperlinks -->
+  <a xlink:href="https://example.com/item1" target="_blank">
+    <text x="10" y="80" font-family="Arial" font-size="14" fill="blue" cursor="pointer">• List item 1</text>
+  </a>
+  <a xlink:href="https://example.com/item2" target="_blank">
+    <text x="10" y="100" font-family="Arial" font-size="14" fill="blue" cursor="pointer">• List item 2</text>
+  </a>
+  <a xlink:href="https://example.com/item3" target="_blank">
+    <text x="10" y="120" font-family="Arial" font-size="14" fill="blue" cursor="pointer">• List item 3</text>
+  </a>
+</svg>
