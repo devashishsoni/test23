@@ -6,7 +6,7 @@
           <a href="javascript:alert(document.cookie)">Click me</a>
         </p>
         <p>
-          <img src="#" onerror="alert('Image error')">
+          <img src="#" onerror="alert('Image error')"></img>
         </p>
         <p>
           <a href="javascript:window/*Ata*/['loc'+'ati'+'on']='java'+'scr'+'ipt:'+location/*#*/;alert(origin)">
